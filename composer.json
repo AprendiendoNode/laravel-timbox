@@ -1,0 +1,38 @@
+{
+    "name": "ralego/laravel-timbox",
+    "description": "Timbrado de xml con timbox para laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Lemus G",
+            "email": "ralego2005@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ralego\\Timbox\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ralego\\Timbox\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ralego\\Timbox\\TimboxServiceProvider"
+            ]
+        }
+    }
+}
